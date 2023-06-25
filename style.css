@@ -957,3 +957,6 @@ input[type="text"] {
     text-decoration: none;
     margin-right: 5px;
 }
+.icon {
+border-radius: 50%;
+}
