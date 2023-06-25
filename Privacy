@@ -39,7 +39,7 @@
                         <a class="more p-2 me-5 p-lg-2 dropdown-toggle"> MORE </a>
                         <ul class="dropdown-content rounded-3">
 
-                            <a class="dropdown-item" href="Terms of Service"><i class="fa-solid fa-gavel"></i></i>&nbspTerms of Service</a>
+                            <a class="dropdown-item" href="Terms"><i class="fa-solid fa-gavel"></i></i>&nbspTerms of Service</a>
 
 
                             <a class="dropdown-item" href="https://discord.gg/fpRHt2Hdjz" target="www.TradeBot.com"><i class="fa-brands fa-discord"></i>&nbspSupport Server</a>
@@ -138,7 +138,7 @@
 
 
 
-            <a class="terms" href="Terms of Service">Terms of Service</a>&nbsp | &nbsp<a class="privacy" href="Privacy Policy">Privacy Policy</a>
+            <a class="terms" href="Terms of Service">Terms</a>&nbsp | &nbsp<a class="privacy" href="Privacy">Privacy Policy</a>
 
         </div>
 
