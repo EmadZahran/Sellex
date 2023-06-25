@@ -1,0 +1,351 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/47993e6a44.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Commands | TradeBot</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TradeBot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link p-2 p-lg-2" href="Commands.html"> <i class="fa-solid fa-gear"></i> COMMANDS</a>
+
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link p-2 p-lg-2" href="Documentation.html"> <i class="fa-solid fa-book"></i> DOCUMENTATION
+
+
+                        </a>
+                    </li>
+                    <li class="dropdown m-2 dropdown-horizontal dropdown-upward">
+
+                        <a class="more p-2 me-5 p-lg-2 dropdown-toggle "> MORE </a>
+                        <ul class="dropdown-content rounded-3">
+
+                            <a class="dropdown-item" href="Terms of Service.html"><i class="fa-solid fa-gavel"></i>&nbspTerms of Service</a>
+
+                            <a class="dropdown-item" href="Privacy Policy.html"><i class="fa-solid fa-lock"></i>&nbsp Privacy Policy</a>
+                            <a class="dropdown-item" href="https://discord.gg/fpRHt2Hdjz" target="www.TradeBot.com"><i class="fa-brands fa-discord"></i>&nbspSupport Server</a>
+                            <a class="dropdown-item" href="FAQ.html"><i class="fa-solid fa-circle-question"></i> &nbspFAQ</a>
+
+
+                        </ul>
+                    </li>
+
+
+                    <a class="btn rounded-pill d-none d-lg-block main-btn" href="https://discord.com/api/oauth2/authorize?client_id=1079169531257311333&permissions=8&scope=bot">ADD TO DISCORD</a>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+
+    <input class="search" type="text" id="searchInput" placeholder="Search...">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Command</th>
+                <th class="des" onclick="sortTable(1)">Description</th>
+                <th onclick="sortTable(2)">Category</th>
+                <th onclick="sortTable(2)">Permission</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>add blacklist</td>
+                <td>Adding the user to the blacklist, which makes him unable to use trade orders or even use trade buttons</td>
+                <td>Blacklist</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>add currency</td>
+                <td>Add currency to your guild, this currency is only for this guild and can then be used by users in trade commands</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>alert enable</td>
+                <td>Enable Trade Alerts, you will be alerted if any trades occur within this guild<br><a class="note">Notice: The user must be able to receive private messages, otherwise the bot will not be able to send any messages to this user</a></td>
+                <td>Config</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>alert disable</td>
+                <td>Disable Trade Alerts, The bot will stop sending trade alerts to the user</td>
+                <td>Config</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>auction time</td>
+                <td>Setting a duration or changing the duration for the auction</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>blacklist data</td>
+                <td>Check blacklist information for user &nbsp; <a class="c-1">time</a>&nbsp;, <a class="c-1">reason</a>&nbsp;, <a class="c-1">admin</a>&nbsp; if it already exists</td>
+                <td>Blacklist</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>change budget</td>
+                <td>Modify the trade budget by the trade reference code for the user within the guild in which the command is used only</td>
+                <td>Modifications</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>change items</td>
+                <td>Modify the trade items &nbsp;<a class="c-1">add items</a>&nbsp;, <a class="c-1">change items</a>&nbsp; by the trade reference code for the user within the guild in which the command is used only</td>
+                <td>Modifications</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>config channel</td>
+                <td>Adding the configuration channel to this syndicate, in which important additions and changes to the trading system appear only for the guild to which the config channel has been added, and this channel will be important in the case of
+                    using the auction</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>dm enable</td>
+                <td>Enable direct messages, enable sending direct messages with private trade commands<br><a class="note">Notice: The user must be able to receive private messages, otherwise the bot will not be able to send any messages to this user</a></td>
+                <td>Config</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>dm disable</td>
+                <td>Disable direct messages, the bot will stop sending direct messages that send with trade commands</td>
+                <td>Config</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>help</td>
+                <td>Explain the important commands of the robot</td>
+                <td>General</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>info</td>
+                <td>Information about the bot and its creator</td>
+                <td>General</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>language</td>
+                <td>Set the language of the guild that used this command<br>This bot uses these languages: <a class="c-1">English</a>, <a class="c-1">Arabic</a>, <a class="c-1">Spanish</a>, <a class="c-1">French</a></td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>modification</td>
+                <td>Modify user trades either by cancellation or termination: <a class="c-1">Cancel</a>, <a class="c-1">Done</a><br>It also helps in deleting reference codes in case the trade is deleted by mistake</td>
+                <td>Modification</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>remove currency</td>
+                <td>Remove the currencies that have been added to the guild</td>
+                <td>Modification</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>remove blacklist</td>
+                <td>Remove the blacklist from the user</td>
+                <td>Blacklist</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>remove trading_channel</td>
+                <td>Remove the trading channnel from the guild</td>
+                <td>Modification</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>remove specific_role</td>
+                <td>Remove the specific role from the guild</td>
+                <td>Modification</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>send_message enable</td>
+                <td>Enable sending messages in trade channels</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>send_message disable</td>
+                <td>Disable sending messages in trade channels</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+
+            <tr>
+                <td>specific role</td>
+                <td>Add a specific role to the guild in which the command was used, with three types:<br><br> <a class="c-1">button</a> : Allows a role selected with this type to be able to use trade buttons such as "Seller" , "Buyers" , "open the auction"<br><br>
+                    <a class="c-1">trader</a> : Allows a role selected with this type to be able to use trade command <a class="c-1">/trade</a><br><br><a class="c-1">all</a> : Allows a role selected with this type to be able to use trade buttons and trade
+                    command
+                </td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>specific_role enable</td>
+                <td>Enable specific role to from the guild<br><a class="note">Notice: You will need to set at least: "Buttons" and "Trader" or just "All</a></td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>specific_role disable</td>
+                <td>Disable specific role to from the guild</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>trade</td>
+                <td>A trade command that is used to buy or sell any items with the ability to add a image or video with this command<a class="note">Notice: You will need to have an added currency and trading channel in order to use this command</a></td>
+                <td>General</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>trading channel</td>
+                <td>Add a channel in order to use it for trading</td>
+                <td>Config</td>
+                <td>Administrator</td>
+            </tr>
+            <tr>
+                <td>trading info</td>
+                <td>See trade information in the guild, how many trades are currently in progress, how many trades for the user, and the language used in trade in the guild</td>
+                <td>General</td>
+                <td>Everyone</td>
+            </tr>
+            <tr>
+                <td>view trades</td>
+                <td>Seeing the trade information of the user by the reference code, and this also helps in the event that there are a lot of trades and you need to know the trade data in order to modify it</td>
+                <td>General</td>
+                <td>Everyone</td>
+            </tr>
+        </tbody id="tableBody">
+
+    </table>
+
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const table = document.getElementById('myTable');
+            const rows = table.getElementsByClassName('tr');
+
+            document.getElementById('searchInput').addEventListener('input', function() {
+                searchTable(this.value);
+            });
+
+            for (let i = 0; i < rows[0].children.length; i++) {
+                rows[0].children[i].addEventListener('click', function() {
+                    sortTable(i);
+                });
+            }
+        });
+
+        function searchTable(input) {
+            const filter = input.toUpperCase();
+            const table = document.getElementById('myTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const rowData = rows[i].getElementsByTagName('td');
+                let match = false;
+
+                for (let j = 0; j < rowData.length; j++) {
+                    const cellData = rowData[j].textContent || rowData[j].innerText;
+
+                    if (cellData.toUpperCase().indexOf(filter) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+
+        function sortTable(columnIndex) {
+            const table = document.getElementById('myTable');
+            const rows = Array.from(table.getElementsByTagName('tr'));
+
+
+            rows.shift();
+
+            rows.sort((a, b) => {
+                const cellDataA = a.getElementsByTagName('td')[columnIndex].textContent || a.getElementsByTagName('td')[columnIndex].innerText;
+                const cellDataB = b.getElementsByTagName('td')[columnIndex].textContent || b.getElementsByTagName('td')[columnIndex].innerText;
+
+
+                if (isNaN(cellDataA) || isNaN(cellDataB)) {
+
+                    return cellDataA.localeCompare(cellDataB);
+                } else {
+
+                    return Number(cellDataA) - Number(cellDataB);
+                }
+            });
+
+
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+
+            rows.forEach((row) => {
+                table.appendChild(row);
+            });
+        }
+    </script>
+
+
+
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+
+        <div class="copyright">
+
+            <div>&copy; 2023 - <span>Emad Zahran - All Rights Reserved</span></div>
+
+
+
+
+        </div>
+        <div class="TSPP">
+
+
+
+            <a class="terms" href="Terms of Service.html">Terms of Service</a>&nbsp | &nbsp<a class="privacy" href="Privacy Policy.html">Privacy Policy</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

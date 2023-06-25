@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/47993e6a44.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>FAQ | TradeBot</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TradeBot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link p-2 p-lg-2" href="Commands.html"> <i class="fa-solid fa-gear"></i> COMMANDS</a>
+
+                    </li>
+                    <li class="nav-item">
+
+                        <a class="nav-link p-2 p-lg-2" href="Documentation.html"> <i class="fa-solid fa-book"></i> DOCUMENTATION
+
+
+                        </a>
+                    </li>
+                    <li class="dropdown m-2 dropdown-horizontal dropdown-upward">
+
+                        <a class="more p-2 me-5 p-lg-2 dropdown-toggle "> MORE </a>
+                        <ul class="dropdown-content rounded-3">
+
+                            <a class="dropdown-item" href="Terms of Service.html"><i class="fa-solid fa-gavel"></i>&nbspTerms of Service</a>
+
+                            <a class="dropdown-item" href="Privacy Policy.html"><i class="fa-solid fa-lock"></i>&nbsp Privacy Policy</a>
+                            <a class="dropdown-item" href="https://discord.gg/fpRHt2Hdjz" target="www.TradeBot.com"><i class="fa-brands fa-discord"></i>&nbspSupport Server</a>
+
+
+
+                        </ul>
+                    </li>
+
+
+                    <a class="btn rounded-pill d-none d-lg-block main-btn" href="https://discord.com/api/oauth2/authorize?client_id=1079169531257311333&permissions=8&scope=bot">ADD TO DISCORD</a>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="faq-p">
+        <div class="container">
+            <div class="main-title">
+
+
+
+
+
+                <h1 class="text-14">
+                    Frequently Asked Questions</h1>
+                <h1 class="q-1"> What is TradeBot <img id="rotate" class="img-5" src="assets/tradeimg.png"></img> ?</h1>
+                <p class="a-1">- It is a commercial bot that coded to suit all communities and to carry out buying, selling and auction operations, with the ability to modify the details of these commands to facilitate the trade process for the user and communities.</p>
+                <h1 class="q-2">How can I use the TradeBot?</h1>
+                <p class="a-2">- All you have to do is add a channel for trade by the following command:
+                    <a class="c-1">/trading channel</a><br> Then you can add currency by following command: <a class="c-1">/add currency</a> After that you can use the trade command <a class="c-1">/trade</a>
+                    <br><br>- In cases like the auction you may need to set the configuration channel via the following command: <a class="c-1">/config channel</a><br> And adjust the auction time by the following command: <a class="c-1">/auction time</a>
+                    <br>- You can also view the rest of the commands and their description by clicking on this button
+                    <a type="button" class="btn rounded-3 btn-sec-2-2 btn-sm m-2" href="Commands.html">COMMANDS</a>
+                </p>
+                <h1 class="q-3"> Can the trade data of one server be used in another server?</h1>
+                <p class="a-3">- The data that is collected by the bot and used on a server is not shared and is not shown to any other server by the bot<br>Each server has its own data that the bot saves and does not use on any other server.</p>
+                <h1 class="q-3"> What languages does the bot use and is it possible to add another language?</h1>
+                <p class="a-3">- The bot uses these languages: <a class="c-1">English</a>, <a class="c-1">Arabic</a>, <a class="c-1">Spanish</a>, <a class="c-1">French</a><br>and fou sure, other languages will be added at the request of users</p>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var rotate = document.getElementById('rotate');
+
+        rotate.addEventListener('mouseover', function() {
+
+            this.className = 'over';
+
+        }, false);
+
+        rotate.addEventListener('mouseout', function() {
+
+            var rotate = this;
+
+            rotate.className = 'out';
+            window.setTimeout(function() {
+                rotate.className = ''
+            }, 150);
+
+        }, false);
+    </script>
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+
+        <div class="copyright">
+
+            <div>&copy; 2023 - <span>Emad Zahran - All Rights Reserved</span></div>
+
+
+
+
+        </div>
+        <div class="TSPP">
+
+
+
+            <a class="terms" href="Terms of Service.html">Terms of Service</a>&nbsp | &nbsp<a class="privacy" href="Privacy Policy.html">Privacy Policy</a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
